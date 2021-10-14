@@ -265,7 +265,10 @@
         </div>        
             
            
-        <form  class="form" id="form" action="form-handler.php">
+        
+
+
+        <form  class="form" id="form" action="https://formsubmit.co/kate.funficient@gmail.com" method="POST" >
             <div class="input col50">
                 <input
                     type="text"
@@ -273,7 +276,7 @@
                     id="name"
                     class="form-control"
                     placeholder="name"
-                    required
+                    
                 />
                 
                 <input
@@ -284,6 +287,13 @@
                     placeholder="e-mail"
                     required
                 />
+
+                <input type="hidden" name="_next" value="https://www.funficient.com/thanks.html">
+                <input type="hidden" name="_subject" value="New form submission!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+               
+
             </div>
         
             <div class="textInput">
@@ -293,11 +303,14 @@
                     class="input-textarea"
                     name="message"
                     placeholder="How can we help?  Enter your message here..."
+                    required
                     ></textarea>
             </div>
+
+            
             
             <div class="submit">
-                <button type="submit" id="submit" class="btn" action="form-handler.php">
+                <button type="submit" id="submit" class="btn">
                     Send message
                 </button>
             </div>
