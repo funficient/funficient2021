@@ -5,9 +5,16 @@
   --grapefruit: #FF7348;
   --straweberry: #FD5A5C;
   --dragonfruit: #F2456F;
+  --gradient: linear-gradient(90deg, #FC9745, #FF7348);
 
   --darkGray:#5D5C5C;
-  --lightGray: #B4B2B2;
+  --lightGray: #fcfcfc;
+
+  /* parallax timeline animation */
+  --total: 4;
+  --offset-width: 10vw;
+  --easing: cubic-bezier(.8, 0, .2, 1);
+  --duration: .6s;
 
 }
 
@@ -75,12 +82,11 @@ p {
 .banner {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#FC9745, #FF7348);
+  background-image: linear-gradient(90deg, #FC9745, #FF7348);
   
 }
 
@@ -152,6 +158,9 @@ p {
   margin-top: 50px;
 }
 
+.banner .grapefruit {
+  background-color: var(--grapefruit);
+}
 
 header {
   position: fixed;
@@ -221,6 +230,88 @@ header .navigation li a:hover {
 }
 
 
+.wave-container {
+  position: relative;
+  
+  background: linear-gradient(
+    135deg,
+    rgba(252, 151, 69, 1) 0%,
+    rgba(255, 115, 72, 1) 100%
+  );
+  color: white;
+  height: 10vh;
+  width: 100%;
+}
+
+.flex {
+    /*Flexbox for containers*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+
+
 /*  -------------------------------------------------  BANNER section end --------------------------------------------------------------------------*/
 /*  ------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -243,7 +334,7 @@ header .navigation li a:hover {
 }
 
 .btn:hover {
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
 }
 
 /*  -------------------------------------------------  BUTTON styling end --------------------------------------------------------------------------*/
@@ -288,7 +379,7 @@ section {
 .introText {
   margin: 0;
   width: 100vw;
-  margin-top: 150px;
+  margin-top: 135px;
   margin-bottom: 150px;
   margin-left: 250px;
   
@@ -297,7 +388,6 @@ section {
 
 .introText .row{
   flex-direction: column;
-  
   width: 100vw;
   overflow: hidden;
 
@@ -308,7 +398,7 @@ section {
 .introText .titleText {
   font-family: "Martel", serif;
   color: #333;
-  font-size: 2em;
+  font-size: 2.2em;
   
 }
 
@@ -327,6 +417,7 @@ section {
 
 .center {
   text-align: center;
+  align-content: center;
 }
 
 .row .col50 .imgBox {
@@ -364,12 +455,17 @@ section {
   max-width: 100vw;
 }
 
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .audience .content {
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: -80px;
 }
 
 .audience .content .box {
@@ -428,7 +524,7 @@ section {
 }
 
 .value .introText p {
-  max-width: 100vw;
+  max-width: 80vw;
 
 }
 
@@ -547,6 +643,11 @@ section {
 }
 */
 
+
+
+
+
+
 /* ---------------------------------------------------------------  Contact form -------------------------------------------------------------------*/
 
 
@@ -567,11 +668,16 @@ section {
 
 .form {
   align-self: flex-start;
-  width: 70vw;
+  width: 80vw;
   padding-top: 70px;
   padding-bottom: 100px;
 }
 
+
+.form-container .btn {
+  align-self: center;
+
+}
 
 
 .contact .inputBox {
@@ -610,6 +716,52 @@ section {
 
 }
 
+.titleText span{
+  font-family: "Martel", serif;
+  color: var(--orange);
+ 
+  
+}
+
+.conversation {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+
+  
+}
+
+
+.conversation a {
+  display: flex;
+  
+  text-align: center;
+  align-items: center;
+  align-items: flex-end;
+  justify-items: flex-end; 
+  padding: 20px; 
+  margin-left: 30px;
+  
+  border-radius: 8px;
+  border: 3px solid rgb(252, 151, 69, 0.5);
+  
+  
+}
+
+.conversation a:hover {
+  
+  background-color: #FC9745;
+  color:#f1f1f1;
+  
+  box-shadow: inset -1px -1px 4px rgb(255, 204, 146),
+ 
+
+}
+
+.social {
+  display: flex;
+}
+
 
 .input {
   margin: 0 auto 1.25rem auto;
@@ -622,7 +774,7 @@ section {
   width: 100%;
   height: 3rem;
   
-  margin-right: 25px;
+ 
   color: #949494;
   
   background-clip: padding-box;
@@ -633,12 +785,17 @@ section {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.form-control:nth-last-child(odd) {
+  margin-left: 25px;
+}
+
 .form-control:focus {
   
   outline: 0;
   box-shadow: 2px  rgba(207, 207, 207, 0.5);
   background-color: #f1f1f1;
   padding: 0.375rem 0.75rem;
+  border-bottom: 1px solid #FC9745;
 }
 
 .input-radio,
@@ -658,6 +815,7 @@ section {
 
 .input-textarea:focus {
 padding: 0.625rem;
+border-bottom: 1px solid #FC9745;
 }
 
 
@@ -671,6 +829,7 @@ padding: 0.625rem;
 
 .input .col50  .form-control{
   display: flex;
+  justify-content: space-between;
 }
 
 
@@ -699,38 +858,145 @@ padding: 0.625rem;
   background-color: #f1f1f1;
 }
 
-.contact .btn {
+.contact .form .btn {
 display: flex;
   background-color: #fff;
   cursor: pointer;
   margin-top: 50px;
   align-items: center;
-}
-
-.submit .btn {
-  display: flex;
-  align-items: center;
-  
   align-self: center;
 }
 
+.submit {
+ display: flex;
+ align-content: center;
+ background-color: #fff;
+ padding: 20px 30px;
+ border-radius: 5px;
+ border: 3px solid #FC9745;
+ font-size: 1rem;
+ letter-spacing: 1px;
+ cursor: pointer;
+ margin-top: 30px;
+}
+
+.form {
+  margin-bottom: 50px;
+}
+
+.form .right {
+  display: flex;
+  align-self: flex-end;
+}
+
+.bmc-btn {
+ align-self: right;
+}
+
+
+
+/* Service page */
+
+.tealBoxContainer {
+  display: flex;
+  flex: 1 1 1 1 1;
+  margin: 20px;
+}
+
+.tealBox {
+max-width: 20%;
+padding: 20px;
+
+box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.red {
+  border-top: 5px solid #D0200C; 
+  background: #fff
+
+}
+
+
+.amber {
+  border-top: 5px solid #C28616; 
+  background: #fff;
+
+}
+
+.orange {
+
+  
+  border-top: 5px solid #FC9745; 
+  background: #fff;
+
+}
+
+.green {
+  border-top: 5px solid #5DB535; 
+  background: #fff;
+
+}
+
+.teal {
+  border-top: 5px solid #12AC9A; 
+  background: #fff;
+
+}
+
+.red .text  h2 span {
+  font-family: "Poppins", sans-serif;
+  background-color: #D0200C;
+  color: #fff;
+}
+
+.amber .text  h2 span {
+  font-family: "Poppins", sans-serif;
+  background-color: #C28616;
+  color: #fff;
+}
+
+.orange .text  h2 span {
+  font-family: "Poppins", sans-serif;
+  background-color: #FC9745;
+  color: #fff;
+}
+
+.green .text  h2 span {
+  font-family: "Poppins", sans-serif;
+  background-color: #5DB535;
+  color: #fff;
+}
+
+.teal .text  h2 span {
+  font-family: "Poppins", sans-serif;
+  background-color: #12AC9A;
+  color: #fff;
+}
+
+.tealBox svg {
+  width: 100%;
+  text-align: center;
+  
+  margin: 10px 5px;
+}
 
 /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
 
 .footer .container {
   flex-direction: column;
+  margin-top: 30px;
   max-width: 99vw;
 
 }
 .footer {
-  background-color: #FC9745;
+  background-color:var(--orange);
   padding: 50px;
   
 }
 
 .footer .titleText {
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   padding: 15px 0px 50px 0px;
   max-width: 90vw;
 }
@@ -861,15 +1127,14 @@ footer .social li a {
     margin-top: 20px;
   }
 
-  .audience .content {
-    margin-top: 20px;
-  }
+ 
 
+/*
   .audience .content .box {
     margin: 10px;
 
     
-  }
+  }*/
 
   .audience .content .box .imgBox {
     height: 350px;
