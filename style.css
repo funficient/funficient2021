@@ -1095,16 +1095,16 @@ font-family: "Oleo Script Swash Caps", cursive;
 
 .pricing-plan {
   width: 20%;
-  border-radius: 25px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
   overflow: hidden;
   line-height: 1.5;
   color: #333;
-  margin: 15px;
+  margin: 1rem;
 }
 
 .pricing-plan__highlighted {
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 1rem rgba(0,0,0,0.4);
   transform: scale(1.05);
 }
 
@@ -1114,15 +1114,14 @@ font-family: "Oleo Script Swash Caps", cursive;
   font-weight: bold;
   color: #5D5C5C;
   background: #WHITE;
-  box-shadow: 0 0 8px rgba(0,0,0,0.4)  ;
+  box-shadow: 0 0 0.7rem rgba(0,0,0,0.4)  ;
 
 }
 
 .pricing-plan__header {
-  padding: 25px;
+  padding: 1.7rem;
   background: #FC9745;
-  opacity: 0.9;
-  color: white;
+    color: white;
 }
 
 
@@ -1147,7 +1146,7 @@ font-family: "Oleo Script Swash Caps", cursive;
 }
 
 .pricing-plan__description {
-  padding: 25px;
+  padding: 2rem;
 }
 
 .pricing-plan__list {
@@ -1158,7 +1157,7 @@ font-family: "Oleo Script Swash Caps", cursive;
 .pricing-plan__feature {
   list-style: none;
   margin: 0;
-  padding-left: 25px ;
+  padding-left: 2rem ;
   position: relative;
   font-size: 0.9rem;
 }
@@ -1175,7 +1174,7 @@ font-family: "Oleo Script Swash Caps", cursive;
 }
 
 .pricing-plan__actions {
-  padding: 25px;
+  padding: 2rem;
   border-top: 1px solid #eeeeee;
   display: flex;
   flex-direction: column;
@@ -1183,7 +1182,7 @@ font-family: "Oleo Script Swash Caps", cursive;
 
 .pricing-plan__button {
   display: inline-block;
-  margin: 15px auto;
+  margin: 1rem auto;
   padding: 8px 20px;
   text-decoration: none;
   color: #FC9745;
@@ -1218,5 +1217,19 @@ font-family: "Oleo Script Swash Caps", cursive;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 3rem 1rem;
 }
+
+.section-text {
+  color: #333;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.spacer {
+  top: -3rem;
+  padding-bottom: 5rem;
+}
+
+/* -----------------   Workshops page --------------------*/
+
