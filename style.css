@@ -69,11 +69,6 @@ header.sticky .logo {
   color: #111;
 }
 
-header.sticky .logo span{
-  color:var(--orange);
-}
-
-
 
 header .navigation {
   position: relative;
@@ -88,7 +83,7 @@ header .navigation li {
 header .navigation li a {
   text-decoration: none;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
   padding: 1rem 1rem;
 
 }
@@ -105,21 +100,31 @@ header .navigation li a:hover {
 
 
 
+section {
+  
+  position: relative;
+  
+}
+
 /*  -------------------------------------------------  Home Page Wave Hero Section --------------------------------------------------------------------------*/
 
 .banner {
   position: relative;
   width: 100%;
+  
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   background-image: linear-gradient(90deg, #FC9745, #FF7348);
 }
 
 .banner .content {
   max-width: 1000px;
   text-align: center;
+  margin-top: 10%;
 }
 
 .banner .content h2 {
@@ -182,10 +187,6 @@ header .navigation li a:hover {
   text-align: left;
 }
 
-.banner .grapefruit {
-  background-color: var(--grapefruit);
-}
-
 
 
 .wave-container {
@@ -201,15 +202,15 @@ header .navigation li a:hover {
   width: 100%;
 }
 
+
 .flex {
     /*Flexbox for containers*/
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: right;
-    text-align: right;
-
     height: 60vh;
+
+    
     width: 100%;
     margin: 0;
     padding: 0;
@@ -281,6 +282,7 @@ header .navigation li a:hover {
   font-size: 1em;
   color: #333;
   border: 2.5px solid #FC9745;
+  background-color: rgb(252, 252, 252);
   border-radius: 5px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   display: inline-block;
@@ -297,15 +299,44 @@ header .navigation li a:hover {
   color: #fff;
 }
 
-/*  -------------------------------------------------  BUTTON styling end --------------------------------------------------------------------------*/
-/*  ------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main-button {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #FC9745;
+  background-color: rgba(243, 243, 243, 0.9);
+  
+  
+  border-radius: 3px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  max-width: fit-content;
+  padding: 0.7rem 3rem;
+  
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: 0.5s;
 
-section {
-  
-  position: relative;
-  
+}
+
+.main-button::after {
+  display: inline-block;
+  padding-left: 2rem;
+  content: "\2192";
   
 }
+
+.main-button:hover {
+  letter-spacing: 1.8px;
+  background-color: #FF7348;
+  color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+/*  -------------------------------------------------  BUTTON styling end --------------------------------------------------------------------------*/
+/*  ------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .container {
   position: relative;
@@ -479,13 +510,35 @@ section {
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .value {
-  margin: 0;'
-  padding: 0;'
+  margin: 0;
+  padding: 0;
 }
 
-.value .introText p {
-  max-width: 80vw;
+.value .container {
+  
+  display: flex;
+  flex-direction: column;
+  
+}
 
+.value .section-text {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.value .container .titleText p {
+  font-size: 1.3rem;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.value .container .introText {
+  display: inline-block;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 3rem;
 }
 
 .value .content {
@@ -527,6 +580,8 @@ section {
 
 .value .content .box .text h3 {
   font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 
 }
 
@@ -606,6 +661,10 @@ section {
 
 }
 
+.contact .titleText h2 {
+  font-size: 4rem;
+}
+
 .titleText span{
   font-family: "Martel", serif;
   color: var(--orange);
@@ -650,6 +709,7 @@ section {
 
 .social {
   display: flex;
+  align-items: flex-start;
 }
 
 
@@ -759,6 +819,13 @@ display: flex;
   align-self: center;
 }
 
+.contact .form .btn:hover {
+  display: flex;
+    background-color: #FC9745;
+    color: #fff;
+   
+  }
+
 .submit {
  display: flex;
  align-content: center;
@@ -774,6 +841,7 @@ display: flex;
 
 .submit:hover {
   background-color: #FC9745;
+  color: #333;
 }
 
 .form {
@@ -865,6 +933,7 @@ footer .social li a {
   header,
   header.sticky {
     padding: 10px 20px;
+    width: 100%;
   }
 
   header .navigation {
@@ -920,6 +989,24 @@ footer .social li a {
 
   section {
     padding: 20px;
+  }
+
+  .banner {
+    margin: 0;
+    padding: 0;
+  }
+  .banner .content {
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 5%;
+    padding: 3rem;
+
+  }
+
+  .waves {
+    margin: 0;
+    padding: 0;
+    z-index: 100;
   }
 
   .banner .content h2 {
