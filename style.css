@@ -2,18 +2,19 @@
 
 :root {
   --tangerine: #f5c325;
-  --orange: #FC9745;
-  --grapefruit: #FF7348;
-  --straweberry: #FD5A5C;
-  --dragonfruit: #F2456F;
-  --gradient: linear-gradient(90deg, #FC9745, #FF7348);
+  --orange: #fc9745;
+  --grapefruit: #ff7348;
+  --straweberry: #fd5a5c;
+  --dragonfruit: #f2456f;
+  --gradient: linear-gradient(90deg, #fc9745, #ff7348);
 
-  --darkGray:#5D5C5C;
+  --darkGray: #5d5c5c;
   --lightGray: #fcfcfc;
-
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
@@ -23,15 +24,12 @@
 
 /* ---------------------------------------------------------- Typography ----------------------------------------------------------------------------- */
 
-
 p {
   font-weight: 300;
   color: #111;
 }
 
 /*  ----------------------------------------------------------Top Navigation ----------------------------------------------------------------------------------------*/
-
-
 
 header {
   position: fixed;
@@ -59,17 +57,16 @@ header img {
   max-width: 100px;
   height: auto;
   transition: 0.5s;
-} 
+}
 
 header.sticky img {
   max-width: 75px;
   height: auto;
-} 
+}
 
 header.sticky .logo {
   color: #111;
 }
-
 
 header .navigation {
   position: relative;
@@ -79,14 +76,13 @@ header .navigation {
 header .navigation li {
   list-style: none;
   margin-left: 30px;
-  }
+}
 
 header .navigation li a {
   text-decoration: none;
   color: white;
   font-weight: 500;
   padding: 1rem 1rem;
-
 }
 
 header.sticky .navigation li a {
@@ -94,17 +90,13 @@ header.sticky .navigation li a {
 }
 
 header .navigation li a:hover {
-  color: #FC9745;
+  color: #fc9745;
   background-color: #ebebeb;
   opacity: 0.8;
 }
 
-
-
 section {
-  
   position: relative;
-  
 }
 
 /*  -------------------------------------------------  Home Page Wave Hero Section --------------------------------------------------------------------------*/
@@ -112,14 +104,13 @@ section {
 .banner {
   position: relative;
   width: 100%;
-  
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  background-image: linear-gradient(90deg, #FC9745, #FF7348);
+  background-image: linear-gradient(90deg, #fc9745, #ff7348);
 }
 
 .banner .content {
@@ -129,57 +120,46 @@ section {
 }
 
 .banner .content h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 4em;
   color: white;
   text-align: left;
 }
 
-
 .banner .content h2 span {
-    color:var(--orange);
-    background-color: #fff
+  color: var(--orange);
+  background-color: #fff;
 }
-
 
 /*  -|-|-|-|-|-|-|-|-|-|-|-|-|--|-|-|-|-|-|-  Update word -|-|-|-|-|-|-|-|-|-|-|-|-|--|-|-|-|-|-|-*/
 
 .banner .content h2 span::before {
-  content: ' clarity. ';
+  content: " clarity. ";
   animation: animate infinite 8s;
 }
 
 @keyframes animate {
- 
-  10% 
-  {
-    content: ' clarity. ';
+  10% {
+    content: " clarity. ";
   }
 
-  30% 
-  {
-    content: ' purpose. ';
-  }
-  
-  50% 
-  {
-    content: ' focus. ';
+  30% {
+    content: " purpose. ";
   }
 
-  75% 
-  {
-    content: ' alignment. ';
+  50% {
+    content: " focus. ";
   }
-    100% 
-  {
-    content: ' play. ';
+
+  75% {
+    content: " alignment. ";
   }
-  
-  
+  100% {
+    content: " play. ";
+  }
 }
 
 /*  -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|  Update word end -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|*/
-
 
 .banner .content p {
   font-size: 1.6em;
@@ -188,11 +168,9 @@ section {
   text-align: left;
 }
 
-
-
 .wave-container {
   position: relative;
-  
+
   background: linear-gradient(
     135deg,
     rgba(252, 151, 69, 1) 0%,
@@ -203,18 +181,16 @@ section {
   width: 100%;
 }
 
-
 .flex {
-    /*Flexbox for containers*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 60vh;
+  /*Flexbox for containers*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
 
-    
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .waves {
@@ -225,7 +201,6 @@ section {
   min-height: 100px;
   max-height: 150px;
 }
-
 
 /* Animation */
 
@@ -270,11 +245,8 @@ section {
   }
 }
 
-
-
 /*  -------------------------------------------------  Hero Banner Section end --------------------------------------------------------------------------*/
 /*  ------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 
 /*  ------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*  -------------------------------------------------  BUTTON styling start --------------------------------------------------------------------------*/
@@ -282,7 +254,7 @@ section {
 .btn {
   font-size: 1em;
   color: #333;
-  border: 2.5px solid #FC9745;
+  border: 2.5px solid #fc9745;
   background-color: rgb(252, 252, 252);
   border-radius: 5px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -291,12 +263,11 @@ section {
   margin-top: 20px;
   text-decoration: none;
   transition: 0.5s;
- 
 }
 
 .btn:hover {
   letter-spacing: 1.8px;
-  background-color: #FC9745;
+  background-color: #fc9745;
   color: #fff;
 }
 
@@ -304,32 +275,29 @@ section {
   font-size: 1.3em;
   text-transform: uppercase;
   font-weight: 600;
-  color: #FC9745;
+  color: #fc9745;
   background-color: rgba(243, 243, 243, 0.9);
-  
-  
+
   border-radius: 3px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   display: inline-block;
   max-width: fit-content;
   padding: 0.7rem 3rem;
-  
+
   margin-top: 2rem;
   text-decoration: none;
   transition: 0.5s;
-
 }
 
 .main-button::after {
   display: inline-block;
   padding-left: 2rem;
   content: "\2192";
-  
 }
 
 .main-button:hover {
   letter-spacing: 1.8px;
-  background-color: #FF7348;
+  background-color: #ff7348;
   color: #fff;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
@@ -340,37 +308,33 @@ section {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
-  background-color: #FC9745;
+  background-color: #fc9745;
   color: #f1f1f1;
-   
+
   border-radius: 3px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
   display: inline-block;
   max-width: fit-content;
   padding: 0.7rem 3rem;
-  
+
   margin-top: 2rem;
   text-decoration: none;
   transition: 0.5s;
-
 }
 
 .secondary-button::after {
   display: inline-block;
   padding-left: 2rem;
   content: "\2192";
-  
 }
 
 .secondary-button:hover {
   letter-spacing: 1.8px;
-  background-color: #FF7348;
+  background-color: #ff7348;
   color: #fff;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
 }
-
-
 
 /*  -------------------------------------------------  BUTTON styling end --------------------------------------------------------------------------*/
 /*  ------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -381,7 +345,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
 }
 
 .row {
@@ -400,8 +363,6 @@ section {
   font-family: "Martel", serif;
   color: #111;
   font-size: 2em;
- 
-  
 }
 
 .introText {
@@ -410,37 +371,32 @@ section {
   margin-top: 135px;
   margin-bottom: 150px;
   margin-left: 250px;
-  
+
   overflow: hidden;
 }
 
-.introText .row{
+.introText .row {
   flex-direction: column;
   width: 100vw;
   overflow: hidden;
-
 }
-
-
 
 .introText .titleText {
   font-family: "Martel", serif;
   color: #333;
   font-size: 2.2em;
-  
 }
 
-.introText .titleText span{
+.introText .titleText span {
   font-family: "Martel", serif;
   color: var(--orange);
   font-size: 2em;
-  
 }
 
 .introText p {
   font-family: "Martel", serif;
   font-size: 1.8em;
-  color: var(--darkGray)
+  color: var(--darkGray);
 }
 
 .center {
@@ -449,11 +405,9 @@ section {
 }
 
 .row .col50 .imgBox {
-  
   position: relative;
   width: 90%;
   height: 100%;
-  
 }
 
 .row .col50 .imgBox img {
@@ -472,7 +426,6 @@ section {
   align-items: center;
   flex-direction: column;
 }
-
 
 .audience {
   margin: 0;
@@ -504,16 +457,14 @@ section {
   width: 450px;
   margin: 20px;
   border: 15px solid #fff;
-  
+
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
 }
-
 
 .audience .content .box .imgBox {
   position: relative;
   width: 100%;
   height: 400px;
-
 }
 
 .audience .content .box .imgBox img {
@@ -523,7 +474,6 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .audience .content .box .text {
@@ -544,9 +494,7 @@ section {
 .audience .btn {
   position: relative;
   bottom: 20px;
-  
 }
-
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -556,14 +504,12 @@ section {
 }
 
 .value .container {
-  
   display: flex;
   flex-direction: column;
-  
 }
 
 .value .section-text {
-  font-family: 'Martel', serif;
+  font-family: "Martel", serif;
   margin-top: 10rem;
   text-align: center;
 }
@@ -588,69 +534,47 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  
 }
-
 
 .value .content .box {
   width: 450px;
   margin: 20px;
   border: 15px solid #fff;
-  
-
 }
-
 
 .value .content .box .text {
   padding: 15px 0 5px;
 }
 
 .value .content .box .text h2 {
-  
-  color:#333;
+  color: #333;
   font-size: 3em;
   font-weight: 500;
-
 }
 
-.value .content .box .text h2 span{
-  color: #FC9745;
+.value .content .box .text h2 span {
+  color: #fc9745;
   font-weight: 900;
- 
-
 }
 
 .value .content .box .text h3 {
   font-weight: 400;
   font-size: 1.8rem;
   margin-bottom: 1rem;
-
 }
 
-
 .value .secondary-button {
-  
   margin: auto;
 }
 
-
-
-
-
-
 /* ---------------------------------------------------------------  Contact form -------------------------------------------------------------------*/
 
-
 .contact {
-
-  margin: 0;'
-  padding: 0;'
-  position: relative;
-
+  margin: 0;
+  'padding:0'position: relative;
 }
 
 .contact .container {
-  
   margin-top: 150px;
   flex-direction: column;
   align-content: center;
@@ -663,12 +587,9 @@ section {
   padding-bottom: 100px;
 }
 
-
 .form-container .btn {
   align-self: center;
-
 }
-
 
 .contact .inputBox {
   position: relative;
@@ -680,9 +601,9 @@ section {
 .contact .inputBox input,
 .contact .inputBox textarea {
   width: 100%;
-  
+
   padding: 10px;
-  
+
   outline: none;
   background-color: #fff;
   font-size: 16px;
@@ -693,7 +614,7 @@ section {
 .contact .inputBox input[type="submit"] {
   font-size: 1em;
   color: var(--darkGray);
-  
+
   font-weight: 500;
   display: inline-block;
   text-transform: uppercase;
@@ -703,60 +624,48 @@ section {
   max-width: 100px;
   border: none;
   cursor: pointer;
-
 }
 
 .contact .titleText h2 {
   font-size: 4rem;
 }
 
-.titleText span{
+.titleText span {
   font-family: "Martel", serif;
   color: var(--orange);
- 
-  
 }
 
 .conversation {
   display: flex;
   width: 80vw;
   justify-content: space-between;
-
-  
 }
-
 
 .conversation a {
   display: flex;
-  
+
   text-align: center;
   align-items: center;
   align-items: flex-end;
-  justify-items: flex-end; 
-  padding: 20px; 
+  justify-items: flex-end;
+  padding: 20px;
   margin-left: 30px;
-  
+
   border-radius: 8px;
   border: 3px solid rgb(252, 151, 69, 0.5);
-  
-  
 }
 
 .conversation a:hover {
-  
-  background-color: #FC9745;
-  color:#f1f1f1;
-  
-  box-shadow: inset -1px -1px 4px rgb(255, 204, 146),
- 
+  background-color: #fc9745;
+  color: #f1f1f1;
 
+  box-shadow: inset -1px -1px 4px rgb(255, 204, 146);
 }
 
 .social {
   display: flex;
   align-items: flex-start;
 }
-
 
 .input {
   margin: 0 auto 1.25rem auto;
@@ -768,15 +677,14 @@ section {
   display: block;
   width: 100%;
   height: 3rem;
-  
- 
+
   color: #949494;
-  
+
   background-clip: padding-box;
-  border-style:hidden;
+  border-style: hidden;
   font-size: 1em;
   border-bottom: 1px solid #333;
- 
+
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -785,12 +693,11 @@ section {
 }
 
 .form-control:focus {
-  
   outline: 0;
-  box-shadow: 2px  rgba(207, 207, 207, 0.5);
+  box-shadow: 2px rgba(207, 207, 207, 0.5);
   background-color: #f1f1f1;
   padding: 0.375rem 0.75rem;
-  border-bottom: 1px solid #FC9745;
+  border-bottom: 1px solid #fc9745;
 }
 
 .input-radio,
@@ -802,39 +709,35 @@ section {
 }
 
 .input-textarea {
-
   min-height: 150px;
   width: 100%;
   padding: 5px;
-  
+
   resize: none;
 }
 
 .input-textarea:focus {
-padding: 0.625rem;
-border-bottom: 1px solid #FC9745;
+  padding: 0.625rem;
+  border-bottom: 1px solid #fc9745;
 }
 
-
 .contact .textInput {
-  
   min-height: 120px;
   width: 100%;
-  
+
   resize: none;
 }
 
-.input .col50  .form-control{
+.input .col50 .form-control {
   display: flex;
   justify-content: space-between;
 }
 
-
 .contact .inputBox .input-textarea {
   width: 90%;
-  
+
   padding: 10px;
-  
+
   outline: none;
   background-color: #fff;
   font-size: 16px;
@@ -849,14 +752,13 @@ border-bottom: 1px solid #FC9745;
 }
 
 .input-textarea:focus {
-  
   outline: 0;
-  box-shadow: 2px  rgba(207, 207, 207, 0.5);
+  box-shadow: 2px rgba(207, 207, 207, 0.5);
   background-color: #f1f1f1;
 }
 
 .contact .form .btn {
-display: flex;
+  display: flex;
   background-color: #fff;
   cursor: pointer;
   margin-top: 50px;
@@ -866,26 +768,25 @@ display: flex;
 
 .contact .form .btn:hover {
   display: flex;
-    background-color: #FC9745;
-    color: #fff;
-   
-  }
+  background-color: #fc9745;
+  color: #fff;
+}
 
 .submit {
- display: flex;
- align-content: center;
- background-color: #fff;
- padding: 20px 30px;
- border-radius: 5px;
- border: 3px solid #FC9745;
- font-size: 1rem;
- letter-spacing: 1px;
- cursor: pointer;
- margin-top: 30px;
+  display: flex;
+  align-content: center;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: 3px solid #fc9745;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 .submit:hover {
-  background-color: #FC9745;
+  background-color: #fc9745;
   color: #333;
 }
 
@@ -899,12 +800,8 @@ display: flex;
 }
 
 .bmc-btn {
- align-self: right;
+  align-self: right;
 }
-
-
-
-
 
 /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
 
@@ -912,21 +809,18 @@ display: flex;
   flex-direction: column;
   margin-top: 30px;
   max-width: 99vw;
-
 }
 .footer {
-  background-color:var(--orange);
+  background-color: var(--orange);
   padding: 50px;
-  
 }
 
 .footer .titleText {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   padding: 15px 0px 50px 0px;
   max-width: 90vw;
 }
-
 
 .white {
   color: #fff;
@@ -942,9 +836,8 @@ display: flex;
 }
 
 .copyrightText p {
-  color: #fff
+  color: #fff;
 }
-
 
 footer .social {
   position: relative;
@@ -959,7 +852,6 @@ footer .social li {
 footer .social li a {
   text-decoration: none;
   color: white;
-  
 }
 
 .footerRow {
@@ -967,14 +859,11 @@ footer .social li a {
   justify-content: space-between;
   align-items: center;
   max-width: 95vw;
-  
 }
-
 
 /*------------------------------------------------------- Mobile responsive ---------------------------------------------*/
 
 @media (max-width: 991px) {
-
   header,
   header.sticky {
     padding: 10px 20px;
@@ -984,8 +873,6 @@ footer .social li a {
   header .navigation {
     display: none;
   }
-
-  
 
   header .navigation.active {
     width: 100%;
@@ -1001,7 +888,6 @@ footer .social li a {
   }
 
   header .navigation li {
-    
     margin-left: 0;
     color: black;
     font-size: 1.6em;
@@ -1020,12 +906,10 @@ footer .social li a {
   }
 
   .menuToggle.active {
-
     background: url(/assets/close-black.svg);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
-
   }
 
   header.sticky .menuToggle {
@@ -1045,7 +929,6 @@ footer .social li a {
     text-align: center;
     margin-top: 5%;
     padding: 3rem;
-
   }
 
   .waves {
@@ -1072,9 +955,7 @@ footer .social li a {
     margin-top: 20px;
   }
 
- 
-
-/*
+  /*
   .audience .content .box {
     margin: 10px;
 
@@ -1106,7 +987,6 @@ footer .social li a {
     margin-top: 20px;
     margin-bottom: 30px;
   }
-
 }
 
 /*------------------------------------------------------- Fonts  ---------------------------------------------
@@ -1121,73 +1001,85 @@ font-family: "Oleo Script Swash Caps", cursive;
 
 /* --------------------------------------------------- Services | Big Container ---------------------------------------------------------------------------------*/
 
-.tealTransformations .container  .introText {
+.tealTransformations .container .introText {
   display: block;
   width: 100vw;
   align-items: center;
   text-align: center;
 }
 
-.tealTransformation .container  .introText h3 {
+.tealTransformation .container .introText h3 {
   margin-top: 3rem;
   font-size: 1.4rem;
   font-weight: 200;
 }
 
-.tealTransformation .container  .introText  h3.fancy {
+.tealTransformation .container .introText h3.fancy {
   margin-top: 4rem;
   font-size: 1.5rem;
   font-weight: 300;
-  font-family: 'Martel', serif;
- 
+  font-family: "Martel", serif;
+
   color: #333;
 }
 
 .red {
- 
-  background: rgb(137,13,21);
-  background: linear-gradient(40deg, rgba(137,13,21,1) 0%, rgba(187,6,28,1) 79%, rgba(212,3,32,1) 100%); 
+  background: rgb(137, 13, 21);
+  background: linear-gradient(
+    40deg,
+    rgba(137, 13, 21, 1) 0%,
+    rgba(187, 6, 28, 1) 79%,
+    rgba(212, 3, 32, 1) 100%
+  );
   box-shadow: rgba(0, 0, 0, 0.08);
 }
 
-
 .amber {
-  background: rgb(161,97,0);
-  background: linear-gradient(80deg, rgba(161,97,0,1) 0%, rgba(179,108,0,1) 54%, rgba(194,137,51,1) 100%); 
-
+  background: rgb(161, 97, 0);
+  background: linear-gradient(
+    80deg,
+    rgba(161, 97, 0, 1) 0%,
+    rgba(179, 108, 0, 1) 54%,
+    rgba(194, 137, 51, 1) 100%
+  );
 }
 
 .orange {
-  background: rgb(255,85,0);
-  background: linear-gradient(45deg, rgba(255,85,0,1) 0%, rgba(255,117,0,1) 54%, rgba(255,133,0,1) 100%);  
-
+  background: rgb(255, 85, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 85, 0, 1) 0%,
+    rgba(255, 117, 0, 1) 54%,
+    rgba(255, 133, 0, 1) 100%
+  );
 }
 
 .green {
-  background: rgb(66,150,77);
-  background: linear-gradient(45deg, rgba(66,150,77,1) 0%, rgba(103,181,74,1) 54%, rgba(151,209,92,1) 100%); 
-  
-
+  background: rgb(66, 150, 77);
+  background: linear-gradient(
+    45deg,
+    rgba(66, 150, 77, 1) 0%,
+    rgba(103, 181, 74, 1) 54%,
+    rgba(151, 209, 92, 1) 100%
+  );
 }
 
 .teal {
-  background: rgb(0,86,96);
-  background: linear-gradient(45deg, rgba(0,86,96,1) 0%, rgba(0,128,129,1) 54%, rgba(52,167,152,1) 100%); 
-  
-
+  background: rgb(0, 86, 96);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 86, 96, 1) 0%,
+    rgba(0, 128, 129, 1) 54%,
+    rgba(52, 167, 152, 1) 100%
+  );
 }
 
-
-
 .container .introText {
-  
   width: 70%;
   margin-left: 0;
   text-align: center;
   margin-bottom: 0;
-  
 }
-
 
 .big-box {
   display: block;
@@ -1199,10 +1091,7 @@ font-family: "Oleo Script Swash Caps", cursive;
   text-align: left;
 
   background-color: none;
-
 }
-
-
 
 .box-text {
   color: #f1f1f1;
@@ -1211,30 +1100,27 @@ font-family: "Oleo Script Swash Caps", cursive;
 .box-text h3 {
   font-size: 4rem;
   font-weight: 300;
-  padding-top:2rem;
-
+  padding-top: 2rem;
 }
 
 .tealBoxContainer .tealBox h2 {
   color: #f1f1f1;
   font-size: 2rem;
   font-weight: 300;
-  padding-top:2rem;
-
+  padding-top: 2rem;
 }
 
 .tealTransformation .user-journey .titleText .section-text {
   margin: 8rem 0 3rem 0;
   text-align: center;
+  font-family: "Martel", serif;
 }
 
-
-.tealTransformation .user-journey .titleText  h3 {
+.tealTransformation .user-journey .titleText h3 {
   font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
 }
-
 
 /*------------------------------------  Roadmap -----------------------------*/
 
@@ -1291,7 +1177,7 @@ font-family: "Oleo Script Swash Caps", cursive;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #FC9745;
+  background: #fc9745;
   box-shadow: 0 0 0 3px rgba(248, 218, 46, 0.2);
   top: 24px;
   right: -6px;
@@ -1303,7 +1189,7 @@ font-family: "Oleo Script Swash Caps", cursive;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #FC9745;
+  background: #fc9745;
   box-shadow: 0 0 0 3px rgba(248, 218, 46, 0.2);
   top: 24px;
   left: -4px;
@@ -1314,8 +1200,7 @@ font-family: "Oleo Script Swash Caps", cursive;
   padding: 0;
   font-weight: 600;
   font-size: 2.5rem;
-  color: #FC9745;
-
+  color: #fc9745;
 }
 
 .timeline ul li p {
@@ -1324,7 +1209,6 @@ font-family: "Oleo Script Swash Caps", cursive;
 }
 
 .timeline ul li .step h4 {
-
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
@@ -1337,12 +1221,9 @@ font-family: "Oleo Script Swash Caps", cursive;
   right: -400px;
   margin: 0;
   padding: 0.5rem 1rem;
-      
+
   transition: all ease 0.5s;
 }
-
-
-
 
 .timeline ul li:nth-child(even) .step {
   position: absolute;
@@ -1351,19 +1232,17 @@ font-family: "Oleo Script Swash Caps", cursive;
   margin: 0;
   padding: 0.5rem 1rem;
   transition: all ease 0.5s;
-  
 }
 
 /*------------------------------------- Pricing table ------------------------ */
 
-
-
 .pricing .titleText .section-text {
   text-align: center;
   margin: 8rem 0rem 2rem 0rem;
+  font-family: "Martel", serif;
 }
 
-.pricing .titleText  p {
+.pricing .titleText p {
   font-size: 1.2rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -1372,15 +1251,25 @@ font-family: "Oleo Script Swash Caps", cursive;
 .pricing-plan {
   width: 20%;
   border-radius: 1rem;
-  box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   line-height: 1.5;
   color: #333;
   margin: 1rem;
 }
 
+.starter {
+
+}
+
+.add-on li{
+  list-style: none;
+  padding-bottom: 0.5rem;
+
+}
+
 .pricing-plan__highlighted {
-  box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
   transform: scale(1.05);
 }
 
@@ -1388,26 +1277,21 @@ font-family: "Oleo Script Swash Caps", cursive;
   padding: 1rem;
   text-align: center;
   font-weight: bold;
-  color: #5D5C5C;
+  color: #5d5c5c;
   background: #WHITE;
-  box-shadow: 0 0 0.7rem rgba(0,0,0,0.4)  ;
-
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.4);
 }
 
 .pricing-plan__header {
   padding: 1.7rem;
-  background: #FC9745;
-    color: white;
+  background: #fc9745;
+  color: white;
 }
-
-
-
 
 .pricing-plan__title,
 .pricing-plan__summary {
   margin: 0;
   text-align: center;
-
 }
 
 .pricing-plan__title {
@@ -1418,7 +1302,6 @@ font-family: "Oleo Script Swash Caps", cursive;
 .pricing-plan__summary {
   font-size: 1.1rem;
   font-weight: 300;
-
 }
 
 .pricing-plan__description {
@@ -1433,7 +1316,7 @@ font-family: "Oleo Script Swash Caps", cursive;
 .pricing-plan__feature {
   list-style: none;
   margin: 0;
-  padding-left: 2rem ;
+  padding-left: 2rem;
   position: relative;
   font-size: 0.9rem;
 }
@@ -1444,7 +1327,7 @@ font-family: "Oleo Script Swash Caps", cursive;
 
 .pricing-plan__feature::before {
   content: "\2714";
-  color: #FC9745;
+  color: #fc9745;
   left: 0;
   position: absolute;
 }
@@ -1461,17 +1344,17 @@ font-family: "Oleo Script Swash Caps", cursive;
   margin: 1rem auto;
   padding: 8px 20px;
   text-decoration: none;
-  color: #FC9745;
+  color: #fc9745;
   background: white;
   border-radius: 5px;
-  border: 1px solid #FC9745;
+  border: 1px solid #fc9745;
   text-transform: uppercase;
   letter-spacing: 0.02rem;
   font-weight: bold;
 }
 
 .pricing-plan__button:hover {
-  background: #FC9745;
+  background: #fc9745;
   color: white;
 }
 
@@ -1483,11 +1366,10 @@ font-family: "Oleo Script Swash Caps", cursive;
 }
 
 .pricing-plan__text {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
-  margin: 0 0 10px 0;
+  margin: 10px 0 10px 0;
 }
-
 
 .pricing-plan-container {
   display: flex;
@@ -1503,9 +1385,15 @@ font-family: "Oleo Script Swash Caps", cursive;
 }
 
 .spacer {
-  top: -3rem;
+  top: -1rem;
   padding-bottom: 5rem;
 }
 
-/* -----------------   Workshops page --------------------*/
 
+.smallText {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #333;
+}
+
+/* -----------------   Workshops page --------------------*/
