@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Martel:wght@200;300;400;600;700;800;900&family=Oleo+Script&family=Oleo+Script+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
+  --tangerine: #f5c325;
   --orange: #FC9745;
   --grapefruit: #FF7348;
   --straweberry: #FD5A5C;
@@ -334,6 +335,42 @@ section {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
 }
 
+.secondary-button {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #FC9745;
+  color: #f1f1f1;
+   
+  border-radius: 3px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+  display: inline-block;
+  max-width: fit-content;
+  padding: 0.7rem 3rem;
+  
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: 0.5s;
+
+}
+
+.secondary-button::after {
+  display: inline-block;
+  padding-left: 2rem;
+  content: "\2192";
+  
+}
+
+.secondary-button:hover {
+  letter-spacing: 1.8px;
+  background-color: #FF7348;
+  color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+
 
 /*  -------------------------------------------------  BUTTON styling end --------------------------------------------------------------------------*/
 /*  ------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -446,6 +483,10 @@ section {
   max-width: 100vw;
 }
 
+.audience .introText p {
+  margin-bottom: 8rem;
+}
+
 .wrap {
   display: flex;
   flex-wrap: wrap;
@@ -522,6 +563,7 @@ section {
 }
 
 .value .section-text {
+  font-family: 'Martel', serif;
   margin-top: 10rem;
   text-align: center;
 }
@@ -586,7 +628,10 @@ section {
 }
 
 
-
+.value .secondary-button {
+  
+  margin: auto;
+}
 
 
 
@@ -606,7 +651,7 @@ section {
 
 .contact .container {
   
-  margin-top: 250px;
+  margin-top: 150px;
   flex-direction: column;
   align-content: center;
 }
@@ -1139,6 +1184,7 @@ font-family: "Oleo Script Swash Caps", cursive;
   width: 70%;
   margin-left: 0;
   text-align: center;
+  margin-bottom: 0;
   
 }
 
@@ -1177,8 +1223,151 @@ font-family: "Oleo Script Swash Caps", cursive;
 
 }
 
+.tealTransformation .user-journey .titleText .section-text {
+  margin: 8rem 0 3rem 0;
+  text-align: center;
+}
+
+
+.tealTransformation .user-journey .titleText  h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+/*------------------------------------  Roadmap -----------------------------*/
+
+.timeline {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #333;
+}
+
+.timeline ul {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  line-height: 1.7rem;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.timeline-content {
+  padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FC9745;
+  box-shadow: 0 0 0 3px rgba(248, 218, 46, 0.2);
+  top: 24px;
+  right: -6px;
+}
+
+.timeline ul li:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FC9745;
+  box-shadow: 0 0 0 3px rgba(248, 218, 46, 0.2);
+  top: 24px;
+  left: -4px;
+}
+
+.timeline ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #FC9745;
+
+}
+
+.timeline ul li p {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.timeline ul li .step h4 {
+
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.timeline ul li:nth-child(odd) .step {
+  position: absolute;
+  top: 12px;
+  right: -400px;
+  margin: 0;
+  padding: 0.5rem 1rem;
+      
+  transition: all ease 0.5s;
+}
+
+
+
+
+.timeline ul li:nth-child(even) .step {
+  position: absolute;
+  top: 12px;
+  left: -300px;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  transition: all ease 0.5s;
+  
+}
 
 /*------------------------------------- Pricing table ------------------------ */
+
+
+
+.pricing .titleText .section-text {
+  text-align: center;
+  margin: 8rem 0rem 2rem 0rem;
+}
+
+.pricing .titleText  p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
 
 .pricing-plan {
   width: 20%;
