@@ -2,7 +2,7 @@
 
 To Do:
 
-[] About page
+* [] About page
 [] Resources page
 [] Workshop detail pages
 [] Reviews
