@@ -3,7 +3,7 @@
 #To Do:
 
 - [ ] About page
-- [ ] Resources page
+- [X] Resources page
 - [ ] Workshop detail pages
 - [ ] Reviews
 - [ ] Pricing section responsiveness
