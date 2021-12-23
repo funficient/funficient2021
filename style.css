@@ -805,6 +805,7 @@ section {
 .contact button {
   border: none;
   margin-top: 5rem;
+  cursor: pointer;
 }
 /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
 
