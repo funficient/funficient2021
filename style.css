@@ -652,15 +652,13 @@ section {
   padding: 20px;
   margin-left: 30px;
 
-  border-radius: 8px;
-  border: 3px solid rgb(252, 151, 69, 0.5);
+  border-radius: 5px;
+  border: 3px solid rgb(252, 151, 69, 0.8);
 }
 
 .conversation a:hover {
   background-color: #fc9745;
   color: #f1f1f1;
-
-  box-shadow: inset -1px -1px 4px rgb(255, 204, 146);
 }
 
 .social {
@@ -804,6 +802,10 @@ section {
   align-self: right;
 }
 
+.contact button {
+  border: none;
+  margin-top: 5rem;
+}
 /* ------------------------------------------------------  Footer setion ------------------------------------------------*/
 
 .footer .container {
@@ -1814,5 +1816,4 @@ font-family: "Oleo Script Swash Caps", cursive;
   text-decoration: none;
   color: #fc9745;
   font-weight: 400;
-  
 }
