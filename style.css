@@ -1020,6 +1020,12 @@ font-family: "Oleo Script Swash Caps", cursive;
 
 /* --------------------------------------------------- Services | Big Container ---------------------------------------------------------------------------------*/
 
+.audience .container .content .text h4 {
+  font-weight: 300;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
 .tealTransformations .container .introText {
   display: block;
   width: 100vw;
@@ -1454,6 +1460,12 @@ font-family: "Oleo Script Swash Caps", cursive;
 .workshops .content .box .text {
   padding: 15px 0 5px;
   text-align: center;
+}
+
+.workshops .container .box .text h4 {
+  font-weight: 300;
+  padding-top: 1rem;
+  text-transform: uppercase;
 }
 
 .workshops .content .box .text h3 {
