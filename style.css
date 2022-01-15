@@ -1284,6 +1284,13 @@ footer .social li a {
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
+  .pricing-plan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -1292,13 +1299,19 @@ footer .social li a {
     line-height: 1.3;
     margin: 0.5rem;
   }
+
+  .pricing-plan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
 }
 
 @media (max-width: 1000px) {
   section .pricing-plan {
     width: 80%;
     display: inline-block;
-    float: left;
 
     margin: 0rem;
   }
@@ -1594,7 +1607,7 @@ font-family: "Oleo Script Swash Caps", cursive;
   text-align: center;
   font-weight: bold;
   color: #5d5c5c;
-  background: #WHITE;
+  background: #fff;
   box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.4);
 }
 
@@ -1781,11 +1794,6 @@ font-family: "Oleo Script Swash Caps", cursive;
   bottom: 20px;
 }
 
-.course-summary {
-}
-
-.course-summary svg {
-}
 .course-summary h4 {
   padding-left: 1rem;
 }
