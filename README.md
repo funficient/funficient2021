@@ -23,5 +23,6 @@
 - [ ] Design | Reduce top margin
 - [ ] Design | Reduce image size
 - [ ] Design | Breakpoint at 1 400px 
+- [ ] Bug | Fix 404 page (no styling) 
 - 
 
