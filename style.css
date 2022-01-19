@@ -22,9 +22,36 @@
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-family: "Martel", sans-serif;
+  font-size: 4em;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-family: "Martel", sans-serif;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
 p {
   font-weight: 300;
   color: #111;
+}
+
+li,
+a,
+button {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 section {
@@ -38,10 +65,10 @@ header {
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 40px 100px;
+  padding: 40px 10%;
   z-index: 10000;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   transition: 0.5s;
   overflow: hidden;
@@ -53,6 +80,11 @@ header img {
   transition: 0.5s;
 }
 
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
 header .navigation {
   position: relative;
   display: flex;
@@ -60,7 +92,7 @@ header .navigation {
 
 header .navigation li {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 1.3em;
 }
 
 header .navigation li a {
@@ -68,12 +100,38 @@ header .navigation li a {
   color: white;
   font-weight: 500;
   padding: 1rem 1rem;
+  transition: all 0.3s ease 0s;
 }
 
 header .navigation li a:hover {
   color: #fc9745;
   background-color: #f1f1f1;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.cta {
+  border: 1px solid #fff;
+  padding: 1rem 1rem;
+  transition: all 0.5s ease 0s;
+  margin-left: 20px;
+}
+
+.cta::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f073";
+  display: inline-block;
+  margin-right: 0.5rem;
+
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cta:hover {
+  background: #fff;
+  color: #111;
 }
 
 header.sticky {
@@ -98,6 +156,11 @@ header.sticky .navigation li a:hover {
   color: #fff;
   background-color: #333;
   opacity: 1;
+}
+
+header.sticky .cta {
+  color: #111;
+  border: 1px solid #111;
 }
 
 /*  -------------------------------------------------  Global Section --------------------------------------------------------------------------*/
@@ -161,7 +224,7 @@ header.sticky .navigation li a:hover {
 .banner {
   position: relative;
   width: 100vw;
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,23 +234,21 @@ header.sticky .navigation li a:hover {
 
 .banner .content {
   max-width: 1000px;
-  text-align: center;
   margin-top: 10%;
 }
 
-.banner .content h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 4em;
+.banner .content h1 {
   color: white;
   text-align: left;
 }
 
-.banner .content h2 span {
+.banner .content h1 span {
   color: var(--orange);
   background-color: #fff;
 }
 
-.banner .content h2 span::before {
+.banner .content h1 span::before {
+  font-family: "Martel", sans-serif;
   content: " clarity. ";
   animation: animate infinite 8s;
 }
@@ -214,9 +275,9 @@ header.sticky .navigation li a:hover {
 }
 
 .banner .content p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: white;
-  margin-top: 50px;
+  margin-top: 2.5em;
   text-align: left;
 }
 
@@ -1255,7 +1316,7 @@ footer .social li a {
   }
 
   .content {
-    height: 100%;
+    height: 70%;
   }
   .title {
     text-align: center;
@@ -1648,6 +1709,8 @@ font-family: "Oleo Script Swash Caps", cursive;
   padding-left: 2rem;
   position: relative;
   font-size: 0.9rem;
+  color: #333;
+  font-weight: 400;
 }
 
 .pricing-plan__feature:not(:last-child) {
