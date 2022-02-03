@@ -1259,7 +1259,7 @@ footer .social li a {
   align-items: center;
   height: 100vh;
 
-  background-image: url("/assets/oops.jpg");
+  background-image: url("assets/oops.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1271,14 +1271,14 @@ footer .social li a {
 }
 
 .not-found .content h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Martel", sans-serif;
   font-size: 4em;
   color: white;
   text-align: left;
 }
 
 .not-found .content p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white;
   margin-top: 50px;
   text-align: left;
@@ -1292,6 +1292,11 @@ footer .social li a {
   padding: 50px;
 }
 
+.not-found .footerRow {
+  align-items: center;
+  justify-content: center;
+}
+
 .white {
   color: #fff;
 }
@@ -1301,6 +1306,7 @@ footer .social li a {
   display: flex;
 
   text-align: left;
+
   overflow: none;
   max-width: 95vw;
 }
@@ -1312,6 +1318,7 @@ footer .social li a {
 .not-found .social {
   position: relative;
   display: flex;
+  margin-top: 0;
 }
 
 .not-found .social li {
@@ -1331,7 +1338,7 @@ footer .social li a {
 }
 
 .not-found .button {
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-decoration: none;
   border: 1px solid #f1f1f1;
 
