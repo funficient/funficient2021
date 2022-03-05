@@ -1672,7 +1672,7 @@ footer .social li a {
 
   border-radius: 3px;
   border: 1px solid #fc9745;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   display: inline-block;
   max-width: fit-content;
   padding: 1rem 3rem;
