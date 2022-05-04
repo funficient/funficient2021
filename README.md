@@ -11,6 +11,8 @@
 - [X] Pricing section responsiveness
 - [ ] Co-coaching program
 - [ ] Mob-coaching program
+- [ ] Add coaching questions on resources
+- [ ] Add values workshop
 - [X] Link logo to home page
 - [X] Add favicon
 - [X] Pricing card - Bug - Month-to-month on pricing card needs button
@@ -25,6 +27,6 @@
 - [X] Design | Reduce top margin
 - [X] Design | Reduce image size
 - [X] Design | Breakpoint at 1 400px 
-- [ ] Bug | Fix 404 page (no styling) 
+- [X] Bug | Fix 404 page (no styling) 
 - [ ] Logo - redo logo
 
