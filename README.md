@@ -28,5 +28,5 @@
 - [X] Design | Reduce image size
 - [X] Design | Breakpoint at 1 400px 
 - [X] Bug | Fix 404 page (no styling) 
-- [ ] Logo - redo logo
+- [X] Logo - redo logo
 
